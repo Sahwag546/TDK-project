@@ -1,42 +1,45 @@
 :root {
     --fw-400: 400;
     --fw-700: 700;
-    --fs-13: 13px;
-    --fs-22: 22px;
-    --fs-61: 61px;
-    --lh-83:83.08px;
+    --fs-sm: 13px;
+    --fs-md: 22px;
+    --fs-lg: 61px;
+    --lh-sm: 29.96px;
+    --lh-md:83.08px;
     --fc-white:white;
     --fc-darkblue:#023DA0;
+    --fc-grey:#525252;
+    --fc-orange:#F88011;
 }
 @media (max-width:1026px) {
      :root{
-         --fs-61: 58px;
+         --fs-lg: 58px;
          --lh-83:83.08px
      }
 }
 @media (max-width:768px) {
      :root{
-         --fs-61: 55px;
-         --lh-83:83.08px
+         --fs-lg: 55px;
+         --lh-sm:83.08px
      }
 }
 @media (max-width:768px) {
      :root{
-         --fs-61: 50px;
-         --lh-83:83.08px
+         --fs-lg: 50px;
+         --lh-sm:83.08px
      }
 }
 @media (max-width:604px) {
      :root{
-         --fs-61: 40px;
-         --fs-22: 18px;
-         --lh-83:55px
+         --fs-lg: 40px;
+         --fs-md: 18px;
+         --lh-sm:55px
      }
 }
 @media (max-width:407px) {
      :root{
-         --fs-61: 25px;
-         --fs-22: 15px;
-         --lh-83:40px
+         --fs-lg: 25px;
+         --fs-md: 15px;
+         --lh-sm:40px
      }
 }
