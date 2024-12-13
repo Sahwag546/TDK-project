@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/root.css">
+        <link rel="shortcut icon" href="./assets/image/svg/fav-logo.svg" type="image/x-icon">
+    <title>TDK</title>
+</head>
+
+<body>
+    <section class="bg-img">
+        <div class="bg-blue">
+        <div class="container">
+        <div class="logo bg-blue lg-d-none">
+            <img src="./assets/image/svg/logo-svg.svg" alt="">
+        </div>
+        </div>
+        </div>
+    <nav>
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between row-reverse">
+                <ul class="d-flex align-items-center gap-34 menuLink py ">
+                    <li><a href="">Menu One</a></li>
+                    <li><a href="">Menu two</a></li>
+                    <li><a href="">Menu three</a></li>
+                    <li><a href="">Menu four</a></li>
+                     <li><a href="">Menu five</a></li>
+                </ul>
+                <input type="checkbox" id="menuIcon" hidden>
+                <label for="menuIcon" id="myButton">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="menu d-none lg-d-block">
+                    MENU
+                </div>
+                <ul class="d-flex align-items-center gap-34 menuLink d-none lg-d-block">
+                    <li><a href="">Menu One</a></li>
+                    <li><a href="">Menu two</a></li>
+                    <li><a href="">Menu three</a></li>
+                    <li><a href="">Menu four</a></li>
+                     <li><a href="">Menu five</a></li>
+                       <li>
+                        <label class="label-box cursor">
+                    <input type="text" class="input-text" placeholder="Search by Keyword">
+                <span>
+                    <img src="./assets/image/svg/search-svg.svg" alt="">
+                </span>
+                </label>
+               </li>
+                </ul>
+               <label class="label-box lg-d-none cursor">
+                <input type="text" id="searchInput" class="input-text" placeholder="Search by Keyword">
+                <span>
+                    <img id="searchButton" src="./assets/image/svg/search-svg.svg" alt="">
+                </span>
+               </label>
+              <span class="logo-2 d-none lg-d-block">
+                <img  src="./assets/image/svg/logo-svg.svg" alt="">
+              </span>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="main-heading color-white max-w-1072">
+            Driving Transformation for Performance and Passion Within 
+        </h1>
+        <p class="para color-white pt-15">
+            The future of electric mobility is here. TDK and NEOM McLaren Formula E
+        </p>
+    </div>
+    </section>
+    <div class="bg-grey">
+       <div class="container">   
+        <div class="image">
+            <img class=" d-flex justify-content-center mx-auto cursor scale w-100 max-w-436"src="./assets/image/svg/section-2-img.svg" alt="">
+        </div> 
+       </div>
+    </div>
+</body>
+   <!-- fixed toggle btn  -->
+        <script>
+            let isFixed = false; // Track the current position state
+
+document.getElementById('myButton').addEventListener('click', function() {
+    if (isFixed) {
+        // If currently fixed, change to absolute
+        this.style.position = 'absolute';
+        this.style.top = '0px'; // Reset top
+        this.style.left = 'initial'; // Reset left
+        this.style.bottom = '0px'; // Position it 20px from the bottom
+        this.style.right = '15px'; // Position it 20px from the right
+    } else {
+        // If currently absolute, change to fixed
+        this.style.position = 'fixed';
+        this.style.top = '0px'; // Position it 20px from the top
+        this.style.right = '15px';// Position it 20px from the right
+        this.style.bottom = '15px'; // Position it 20px from the right
+    }
+    isFixed = !isFixed; // Toggle the state
+});
+        </script>
+        <!-- search icon  -->
+<script>
+    const searchButton = document.getElementById('searchButton');
+    const searchInput = document.getElementById('searchInput');
+
+    searchButton.addEventListener('click', () => {
+        const searchTerm = searchInput.value; // Get the value from the input field
+        if (searchTerm) {
+            alert(`You searched for: ${searchTerm}`); // Alert with the search term
+        } else {
+            alert('Please enter a search term.'); // Alert if input is empty
+        }
+    });
+</script>
+</html>
